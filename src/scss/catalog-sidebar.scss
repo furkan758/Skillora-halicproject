@@ -1,0 +1,364 @@
+.catalog-with-sidebar.catalog-list-layout.catalog-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  align-items: stretch;
+}
+.catalog-folder-browser {
+  min-width: 0;
+  background: #f7f9f2;
+  border-right: 1px solid #e6ecdd;
+  padding: 22px 11px;
+  scroll-margin-top: 20px;
+}
+.folder-browser-toggle {
+  display: none;
+}
+.catalog-folder-label {
+  font-size: 8px;
+  letter-spacing: 1.25px;
+  color: #9bac88;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px 17px;
+}
+.catalog-folder-label > span {
+  font-size: 8px;
+  letter-spacing: 0;
+}
+.catalog-folder-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  width: 100%;
+  padding: 10px 9px;
+  border-radius: 6px;
+  text-align: left;
+  color: #8ca178;
+  font-size: 10px;
+  line-height: 1.65;
+}
+.catalog-folder-button > svg {
+  color: #a4b98d;
+}
+.catalog-folder-button > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  flex: 1;
+}
+.catalog-folder-button > b {
+  flex-shrink: 0;
+  font-size: 8px;
+  color: #a3b48e;
+  font-weight: 400;
+}
+.catalog-folder-button.active {
+  background: #e9f0df;
+  color: #6a894f;
+  font-weight: 600;
+}
+.catalog-folder-button.active > svg {
+  fill: #acc58b25;
+  color: #88a66b;
+}
+.catalog-folder-button.active > b {
+  background: #dfe9d1;
+  color: #809e63;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+.catalog-folder-divider {
+  height: 1px;
+  background: #e3ead9;
+  margin: 13px 8px;
+}
+.folder-browser-search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #acbc98;
+  padding: 0 7px;
+  margin-bottom: 10px;
+  border: 1px solid #e5ecdc;
+  border-radius: 5px;
+  background: #fcfdf9;
+  min-width: 0;
+  height: 31px;
+}
+.folder-browser-search > input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  color: #7e9967;
+  font-size: 9px;
+  padding: 0;
+  height: 100%;
+}
+.folder-browser-search > input::placeholder {
+  color: #acb99c;
+}
+.folder-browser-search > input:focus {
+  box-shadow: none;
+}
+.folder-browser-search > button {
+  padding: 0;
+  display: flex;
+  color: #a9b99a;
+}
+.catalog-folder-items {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.catalog-folder-browser .pagination-bar {
+  justify-content: center;
+  gap: 9px;
+  margin-top: 17px;
+  padding-top: 13px;
+  border-color: #e2ead7;
+}
+.catalog-folder-browser .pagination-summary {
+  font-size: 8px;
+  white-space: nowrap;
+}
+.catalog-folder-browser .pagination-controls {
+  gap: 3px;
+}
+.catalog-folder-browser .pagination-controls button {
+  min-width: 26px;
+  height: 26px;
+  padding: 0 5px;
+  font-size: 9px;
+}
+.catalog-folder-browser .pagination-controls .pagination-arrow > span {
+  display: none;
+}
+.catalog-folder-browser .pagination-gap {
+  min-width: 11px;
+  font-size: 9px;
+}
+.catalog-folder-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 18px 4px 0;
+  margin-top: 19px;
+  border-top: 1px solid #e4ebda;
+  color: #afbf9c;
+}
+.catalog-folder-tip > p {
+  font-size: 8px;
+  line-height: 1.9;
+  color: #9eaf8a;
+}
+.catalog-folder-tip > svg {
+  margin-top: 2px;
+}
+.folder-browser-empty {
+  padding: 17px 7px;
+  text-align: center;
+  font-size: 10px;
+  color: #9db08a;
+}
+.folder-browser-empty > button {
+  font-size: 9px;
+  color: #789b5b;
+  padding: 0;
+  margin-top: 10px;
+}
+.catalog-with-sidebar.catalog-list-layout .catalog-content {
+  min-width: 0;
+  padding: 23px;
+}
+.catalog-with-sidebar .skill-list {
+  min-width: 620px;
+}
+.catalog-with-sidebar .data-list thead th {
+  padding: 13px 12px;
+  font-size: 9px;
+}
+.catalog-with-sidebar .data-list tbody td {
+  padding: 12px;
+  font-size: 9px;
+}
+.catalog-with-sidebar .list-skill-name {
+  gap: 7px;
+}
+.catalog-with-sidebar .list-skill-name > strong {
+  font-size: 10px;
+}
+.catalog-with-sidebar .list-folder-tag {
+  font-size: 8px;
+  padding: 4px 5px;
+  gap: 4px;
+}
+.catalog-with-sidebar .list-proficiency {
+  min-width: 87px;
+  gap: 6px;
+}
+.catalog-with-sidebar .list-row-actions {
+  gap: 0;
+}
+.catalog-with-sidebar .list-row-actions .icon-button {
+  width: 24px;
+}
+.catalog-with-sidebar .catalog-folder-heading h3 {
+  overflow-wrap: anywhere;
+}
+.catalog-with-sidebar .catalog-content > .pagination-bar {
+  row-gap: 12px;
+}
+@media (min-width: 1550px) {
+  .catalog-with-sidebar.catalog-list-layout.catalog-layout {
+    grid-template-columns: 215px minmax(0, 1fr);
+  }
+  .catalog-folder-browser {
+    padding: 25px 14px;
+  }
+  .catalog-folder-button {
+    font-size: 11px;
+    padding: 11px 10px;
+  }
+  .catalog-with-sidebar .data-list thead th {
+    padding: 15px;
+    font-size: 10px;
+  }
+  .catalog-with-sidebar .data-list tbody td {
+    padding: 14px 15px;
+    font-size: 10px;
+  }
+  .catalog-with-sidebar .list-skill-name > strong {
+    font-size: 11px;
+  }
+  .catalog-with-sidebar .list-folder-tag {
+    font-size: 9px;
+  }
+  .catalog-with-sidebar.catalog-list-layout .catalog-content {
+    padding: 26px;
+  }
+}
+@media (max-width: 1000px) {
+  .catalog-with-sidebar.catalog-list-layout.catalog-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .catalog-folder-browser {
+    border-right: 0;
+    border-bottom: 1px solid #e5ecdb;
+    padding: 0;
+  }
+  .folder-browser-toggle {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    padding: 15px 19px;
+    text-align: left;
+    color: #829d6a;
+    font-size: 11px;
+  }
+  .folder-browser-toggle > span {
+    flex-shrink: 0;
+  }
+  .folder-browser-toggle small {
+    font-size: 9px;
+    margin-left: 4px;
+    color: #acbb99;
+  }
+  .folder-browser-toggle > strong {
+    margin-left: auto;
+    font-size: 10px;
+    color: #9aae86;
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+  }
+  .folder-browser-toggle > svg:last-child {
+    color: #a7ba93;
+    transition: transform 0.18s;
+  }
+  .catalog-folder-browser.expanded .folder-browser-toggle > svg:last-child {
+    transform: rotate(180deg);
+  }
+  .folder-browser-body {
+    display: none;
+    padding: 0 17px 19px;
+  }
+  .catalog-folder-browser.expanded .folder-browser-body {
+    display: block;
+  }
+  .catalog-folder-label {
+    display: none;
+  }
+  .catalog-folder-items {
+    max-height: 340px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #cfdbc1 transparent;
+  }
+  .catalog-folder-button {
+    font-size: 11px;
+    padding: 9px 11px;
+  }
+  .folder-browser-search {
+    height: 34px;
+    margin: 0 1px 11px;
+  }
+  .folder-browser-search > input {
+    font-size: 10px;
+  }
+  .catalog-folder-divider {
+    margin: 11px;
+  }
+  .catalog-folder-tip {
+    display: none;
+  }
+  .catalog-folder-browser .pagination-bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .catalog-folder-browser .pagination-summary {
+    font-size: 9px;
+  }
+  .catalog-folder-browser .pagination-controls button {
+    min-width: 28px;
+    height: 28px;
+  }
+  .catalog-with-sidebar.catalog-list-layout .catalog-content {
+    padding: 21px;
+  }
+  .catalog-with-sidebar .skill-list {
+    min-width: 620px;
+  }
+}
+@media (max-width: 520px) {
+  .folder-browser-toggle {
+    padding: 14px 15px;
+    font-size: 10px;
+  }
+  .folder-browser-body {
+    padding: 0 13px 16px;
+  }
+  .catalog-with-sidebar.catalog-list-layout .catalog-content {
+    padding: 18px 13px;
+  }
+  .catalog-with-sidebar .skill-list {
+    min-width: 610px;
+  }
+  .catalog-with-sidebar .catalog-folder-heading h3 {
+    font-size: 16px;
+  }
+  .catalog-with-sidebar .catalog-folder-heading p {
+    font-size: 8px;
+  }
+  .catalog-with-sidebar .data-list tbody td {
+    font-size: 10px;
+  }
+  .catalog-with-sidebar .list-skill-name > strong {
+    font-size: 11px;
+  }
+}

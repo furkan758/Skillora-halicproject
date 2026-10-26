@@ -1,0 +1,285 @@
+.data-list-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+  border: 1px solid #e3e9da;
+  border-radius: 9px;
+  background: #fff;
+  scrollbar-width: thin;
+  scrollbar-color: #cfdbc1 #f7f9f2;
+}
+.data-list {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  white-space: nowrap;
+}
+.data-list thead th {
+  font:
+    500 10px "DM Sans",
+    sans-serif;
+  color: #8c9d7b;
+  background: #f5f8ef;
+  padding: 14px 17px;
+  border-bottom: 1px solid #e5ecdc;
+  letter-spacing: 0.1px;
+}
+.data-list tbody td {
+  padding: 13px 17px;
+  border-top: 1px solid #edf1e6;
+  color: #8a9d76;
+  font-size: 10px;
+  line-height: 1.6;
+  vertical-align: middle;
+  background: #fff;
+}
+.data-list tbody tr:first-child td {
+  border-top: 0;
+}
+.data-list tbody tr:hover td {
+  background: #fbfcf8;
+}
+.data-list .list-actions-heading {
+  text-align: right;
+}
+.list-row-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3px;
+}
+.list-row-actions .icon-button {
+  width: 27px;
+  height: 28px;
+  color: #9fb28d;
+}
+.list-row-actions .delete-icon:hover {
+  color: #b57462;
+  background: #fcf1eb;
+}
+.list-person-name,
+.list-folder-name,
+.list-skill-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  padding: 0;
+  min-width: 0;
+}
+.list-person-name > span > strong,
+.list-folder-name strong,
+.list-skill-name > strong {
+  font-size: 11px;
+  color: #6d8956;
+  font-weight: 600;
+  line-height: 1.7;
+  display: block;
+  letter-spacing: -0.1px;
+}
+.list-person-name > span > small {
+  display: block;
+  font-size: 9px;
+  font-weight: 400;
+  color: #9aaa87;
+  margin-top: 3px;
+}
+.list-skill-tags {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.data-list .avatar.tiny {
+  width: 34px;
+  height: 34px;
+  font-size: 10px;
+}
+.data-list .skill-tag {
+  font-size: 8px;
+  padding: 4px 6px;
+}
+.data-list .availability {
+  font-size: 8px;
+  padding: 4px 6px;
+}
+.list-folder-name .folder-heading-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  margin: 0;
+  flex-shrink: 0;
+}
+.list-folder-name small {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #b0bda1;
+  font-size: 8px;
+  margin-top: 3px;
+}
+.list-count {
+  display: inline-block;
+  padding: 3px 7px;
+  min-width: 26px;
+  text-align: center;
+  border-radius: 4px;
+  background: #f0f5e8;
+  color: #93a77c;
+  font-size: 9px;
+}
+.list-folder-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 7px;
+  background: #f6f8f1;
+  border: 1px solid #e7eddf;
+  border-radius: 4px;
+  color: #91a67b;
+  font-size: 9px;
+}
+.list-proficiency {
+  min-width: 100px;
+  max-width: 140px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.list-proficiency > strong {
+  font-size: 9px;
+  color: #8da574;
+  font-weight: 500;
+  min-width: 34px;
+}
+.list-proficiency .proficiency-track {
+  flex: 1;
+  width: auto;
+  min-width: 46px;
+  height: 4px;
+}
+.list-muted {
+  color: #b0bda2;
+  font-size: 9px;
+}
+.list-skill-name .catalog-code-icon {
+  width: 31px;
+  height: 31px;
+  border-radius: 7px;
+  flex-shrink: 0;
+}
+.catalog-list-layout.catalog-layout {
+  display: block;
+}
+.catalog-list-layout .catalog-content {
+  padding: 23px;
+}
+.folder-list th:first-child {
+  width: 46%;
+}
+.skill-list th:first-child {
+  width: 28%;
+}
+.employee-list {
+  min-width: 790px;
+}
+.folder-list {
+  min-width: 515px;
+}
+.skill-list {
+  min-width: 660px;
+}
+.data-list button:focus-visible {
+  outline-offset: 3px;
+}
+.catalog-list-layout .catalog-folder-heading p {
+  display: block;
+}
+@media (min-width: 1550px) {
+  .data-list thead th {
+    font-size: 11px;
+    padding: 15px 20px;
+  }
+  .data-list tbody td {
+    font-size: 11px;
+    padding: 15px 20px;
+  }
+  .list-person-name > span > strong,
+  .list-folder-name strong,
+  .list-skill-name > strong {
+    font-size: 12px;
+  }
+  .list-person-name > span > small {
+    font-size: 10px;
+  }
+  .data-list .skill-tag,
+  .data-list .availability {
+    font-size: 9px;
+  }
+  .list-folder-tag,
+  .list-proficiency > strong,
+  .list-muted {
+    font-size: 10px;
+  }
+  .catalog-list-layout .catalog-content {
+    padding: 26px;
+  }
+}
+@media (max-width: 1000px) {
+  .catalog-list-layout .catalog-content {
+    padding: 20px;
+  }
+  .data-list thead th {
+    padding: 13px 14px;
+  }
+  .data-list tbody td {
+    padding: 12px 14px;
+  }
+  .employee-list {
+    min-width: 740px;
+  }
+  .skill-list {
+    min-width: 630px;
+  }
+}
+@media (max-width: 520px) {
+  .catalog-list-layout .catalog-content {
+    padding: 18px 13px;
+  }
+  .data-list thead th {
+    font-size: 9px;
+    padding: 12px;
+  }
+  .data-list tbody td {
+    font-size: 10px;
+    padding: 12px;
+  }
+  .list-person-name > span > strong,
+  .list-folder-name strong,
+  .list-skill-name > strong {
+    font-size: 11px;
+  }
+  .employee-list {
+    min-width: 730px;
+  }
+  .folder-list {
+    min-width: 480px;
+  }
+  .skill-list {
+    min-width: 610px;
+  }
+  .catalog-list-layout .catalog-folder-heading h3 {
+    font-size: 16px;
+    gap: 7px;
+  }
+  .catalog-list-layout .catalog-folder-heading p {
+    font-size: 8px;
+  }
+  .catalog-list-layout .folder-heading-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .catalog-list-layout .folder-heading-actions .icon-button {
+    width: 24px;
+  }
+  .catalog-list-layout .catalog-folder-heading {
+    gap: 9px;
+  }
+}

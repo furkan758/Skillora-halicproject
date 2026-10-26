@@ -1,0 +1,6 @@
+// Generate the shared visual percentages without inline styles or repeated rules.
+@for $percentage from 0 through 100 {
+  [data-progress="#{$percentage}"] {
+    --progress: #{$percentage * 1%};
+  }
+}
