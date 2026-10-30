@@ -1,0 +1,35 @@
+.matches-panel {
+  scroll-margin-top: 20px;
+}
+.matches-panel > .pagination-bar {
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 16px;
+}
+.matches-panel > .pagination-bar > .pagination-summary {
+  font-size: 9px;
+}
+.matches-panel .pagination-controls {
+  gap: 3px;
+}
+.matches-panel .pagination-controls > button {
+  min-width: 28px;
+  height: 29px;
+  padding: 0 7px;
+  font-size: 9px;
+}
+.matches-panel .pagination-arrow > span {
+  display: none;
+}
+.matches-panel .panel-heading p {
+  line-height: 1.8;
+}
+@media (max-width: 520px) {
+  .matches-panel > .pagination-bar {
+    align-items: center;
+  }
+  .matches-panel .pagination-controls > button {
+    height: 31px;
+    min-width: 31px;
+  }
+}

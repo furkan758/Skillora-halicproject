@@ -1,0 +1,118 @@
+.pagination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #e6ecdd;
+  flex-wrap: wrap;
+}
+.pagination-summary {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #91a180;
+}
+.pagination-summary strong {
+  font-weight: 500;
+  color: #6f8959;
+}
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.pagination-controls button {
+  height: 31px;
+  min-width: 31px;
+  border: 1px solid #e2e9d8;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 10px;
+  color: #899d74;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  gap: 4px;
+}
+.pagination-controls button.current {
+  color: #fff;
+  background: #315d43;
+  border-color: #315d43;
+  font-weight: 600;
+}
+.pagination-controls button:hover:not(:disabled):not(.current) {
+  background: #eff4e7;
+  border-color: #c5d5b4;
+}
+.pagination-controls button:disabled {
+  background: #f7f9f3;
+  color: #bac5ad;
+  opacity: 0.7;
+}
+.pagination-controls .pagination-arrow {
+  padding: 0 9px;
+  font-size: 9px;
+}
+.pagination-gap {
+  font-size: 11px;
+  color: #a7b697;
+  min-width: 15px;
+  text-align: center;
+}
+.directory,
+.catalog-content {
+  scroll-margin-top: 20px;
+}
+.filter-bar .filter-select:last-child {
+  margin-left: auto;
+}
+.catalog .pagination-bar {
+  margin-top: 21px;
+}
+.catalog .pagination-summary {
+  font-size: 9px;
+}
+.catalog .pagination-controls button {
+  height: 29px;
+  min-width: 29px;
+  font-size: 9px;
+}
+.catalog .pagination-arrow {
+  font-size: 8px;
+  padding: 0 7px;
+}
+@media (max-width: 620px) {
+  .pagination-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-top: 16px;
+  }
+  .pagination-controls {
+    gap: 4px;
+  }
+  .pagination-summary {
+    font-size: 10px;
+  }
+  .pagination-controls .pagination-arrow > span {
+    display: none;
+  }
+  .pagination-controls .pagination-arrow {
+    padding: 0 7px;
+  }
+  .pagination-controls button {
+    height: 32px;
+    min-width: 32px;
+  }
+  .catalog .pagination-controls button {
+    height: 30px;
+    min-width: 30px;
+  }
+  .catalog .pagination-summary {
+    font-size: 10px;
+  }
+}

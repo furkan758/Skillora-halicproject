@@ -1,0 +1,2 @@
+"""Skillora FastAPI application."""
+

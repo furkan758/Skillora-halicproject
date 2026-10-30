@@ -1,0 +1,65 @@
+.data-list.employee-list {
+  min-width: 960px;
+
+  th,
+  td {
+    padding-inline: 12px;
+  }
+
+  .employee-id-heading {
+    width: 60px;
+  }
+
+  .employee-id {
+    color: #a1af96;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .list-person-name {
+    gap: 8px;
+  }
+
+  .employee-last-name {
+    color: #6d8956;
+    font-weight: 500;
+  }
+
+  .employee-experience {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .gender-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 6px;
+    border: 1px solid #e5ecdc;
+    border-radius: 4px;
+    font-size: 8px;
+    line-height: 1.4;
+    white-space: nowrap;
+    background: #fff;
+    color: #8c9d7b;
+
+    &[data-gender="Male"] {
+      background: #edf4ff;
+      border-color: #d9e7fb;
+      color: #35659e;
+    }
+
+    &[data-gender="Female"] {
+      background: #fff0f0;
+      border-color: #f8d9dd;
+      color: #b54c53;
+    }
+  }
+
+  .list-actions-heading {
+    width: 54px;
+  }
+}
+
+@media (min-width: 1550px) {
+  .data-list.employee-list .gender-badge {
+    font-size: 9px;
+  }
+}

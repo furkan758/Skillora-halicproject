@@ -1,0 +1,26 @@
+# Generated dependencies and build output
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.log
+
+# Local environment settings; commit templates only
+.env
+.env.*
+!.env.example
+
+# Local databases, backups and database-client credentials
+*.mdf
+*.ndf
+*.ldf
+*.bak
+*.sqlite
+*.sqlite3
+*.db
+backups/
+.dbeaver/
+.dbeaver-data-sources*
+.dbeaver-credentials*

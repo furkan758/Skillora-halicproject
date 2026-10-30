@@ -1,0 +1,120 @@
+@use "./tokens" as theme;
+.editor-fields {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.field-help {
+  color: theme.$muted;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+.employee-skill-editor {
+  display: grid;
+  grid-template-columns:
+    minmax(95px, 1fr) minmax(110px, 1fr) minmax(110px, 1fr)
+    28px;
+  align-items: center;
+  gap: 12px;
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: theme.$muted;
+    font-size: 11px;
+  }
+  input,
+  select {
+    width: 100%;
+    min-width: 0;
+  }
+}
+.employee-experience {
+  max-width: 185px;
+  white-space: normal;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.library-footnote {
+  line-height: 1.6;
+}
+@media (max-width: 600px) {
+  .employee-skill-editor {
+    grid-template-columns: 1fr 1fr 28px;
+    > strong {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.directory-actions,
+.scenario-record-actions > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.directory-actions .export-button {
+  display: inline-flex;
+}
+.draft-note {
+  color: theme.$muted;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+.wizard-draft-note {
+  margin: 16px 24px;
+}
+.draft-copy {
+  margin: 0 24px 16px;
+}
+.scenario-record-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 24px;
+  border-bottom: 1px solid theme.$border;
+  > span {
+    color: theme.$muted;
+    font-size: 12px;
+  }
+}
+.restore-list {
+  padding: 0;
+  list-style: none;
+  li {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid theme.$border;
+  }
+  small {
+    display: block;
+    color: theme.$muted;
+    padding-top: 4px;
+  }
+}
+.library-status-tabs {
+  display: flex;
+  gap: 5px;
+  margin: 12px 0;
+  button {
+    flex: 1;
+    border: 1px solid theme.$border;
+    border-radius: 6px;
+    padding: 8px;
+    background: white;
+    color: theme.$muted;
+    &[aria-pressed="true"] {
+      background: #eaf0e2;
+      color: theme.$green;
+    }
+  }
+}
